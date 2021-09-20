@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .main-container {
@@ -20,7 +21,6 @@ body {
     min-height: 100vh;
     background-color: transparent;
     width: 100vw;
-    height: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -148,13 +148,15 @@ hr:not([size]) {
 
 /* FOOTER */
 
+footer {
+    margin-top: auto;
+}
+
 .copyright {
     color: #000;
     text-align: center;
-    padding: 0px 40px;
     font-family: Helvetica, sans-serif;
     opacity: 0.2;
-    flex-shrink: 0;
 }
 
 
@@ -308,7 +310,7 @@ hr:not([size]) {
     .header-text {
         font-size: 20px;
         line-height: 30px;
-        padding: 30px 0px 0px 50px;
+        padding: 30px 0px 0px 30px;
         width: 80vw;
     }
     hr:not([size]) {
@@ -316,25 +318,25 @@ hr:not([size]) {
     }
     .line {
         margin-bottom: 0px;
-        margin-left: 50px;
+        margin-left: 30px;
         margin-top: 0px;
     }
     .gradient-text {
         font-size: 16px;
         line-height: 26px;
-        padding: 20px 50px 0px 50px;
+        padding: 20px 50px 0px 30px;
         width: 80vw;
     }
     .plain-text {
         font-size: 16px;
         line-height: 26px;
-        padding: 0px 50px 10px;
+        padding: 0px 50px 10px 30px;
         width: 80vw;
     }
     .visit-text {
         font-size: 16px;
         line-height: 26px;
-        padding: 0px 50px 10px;
+        padding: 0px 50px 10px 30px;
     }
     /* IMAGES */
     .container {
