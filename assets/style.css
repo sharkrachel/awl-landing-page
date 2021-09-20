@@ -1,31 +1,6 @@
-
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-  }
-  .clearfix { display: inline-block; }
-  /* start commented backslash hack \*/
-  * html .clearfix { height: 1%; }
-  .clearfix { display: block; }
-  /* close commented backslash hack */
-
 html {
     height: 100%;
-}
-
-body {
-    background: #F1F8FE;
-    background: -webkit-linear-gradient(top, #F1F8FE, #FFFFFF);
-    background: -moz-linear-gradient(top, #F1F8FE, #FFFFFF);
-    background: linear-gradient(to middle, #F1F8FE, #FFFFFF);
     width: 100vw;
-    height: 100%;
-    overflow-x: hidden !important;
-    background-repeat: no-repeat;
 }
 
 .main-container {
@@ -37,6 +12,23 @@ body {
     height: 100%;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    /* GRADIENT BACKGROUND */
+    
+    background: #FFFFFF;
+    background: -webkit-linear-gradient(top, #F1F8FE, #FFFFFF);
+    background: -moz-linear-gradient(top, #F1F8FE, #FFFFFF);
+    background: linear-gradient(to middle, #F1F8FE, #FFFFFF);
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden !important;
+    background-repeat: no-repeat;
     
 } 
 
@@ -46,10 +38,8 @@ body {
     width: 100%;
     max-width: 960px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: transparent;
+    flex-grow: 1;
 }
 
 .header-text {
@@ -148,18 +138,15 @@ hr:not([size]) {
 }
 
  /* FOOTER */
-
-footer {
-    padding-bottom: 2.5rem;
-    flex-shrink: 0;
-    width: 100vw;
-    position: fixed !important;
-    bottom: 0;
-  } 
+    footer {
+        padding-bottom: 2.5rem;
+        flex:0;
+        position: fixed !important;
+        bottom: 0;
+    } 
 
   .copyright {
-    width: 100%;
-    height: 2.5rem;
+
     text-align: center;
     padding: 0px 40px;
     font-family: Helvetica, sans-serif;
@@ -219,13 +206,6 @@ footer {
 
 
 @media screen and (max-width: 1200px) {
-
-    .main-container {
-        position: relative;
-        background-color: transparent;
-        
-    } 
-
     .text-wrapper {
         top: 0;
         left: 0;
@@ -306,22 +286,12 @@ hr:not([size]) {
     .main-container {
         transform: translate(0, 0%);
         position: relative;
-        background-color: transparent;
-        
+        background-color: transparent;  
     } 
     
      /* TEXT */
     
-    .text-wrapper {
-        width: 100%;
-        max-width: 960px;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: transparent;
-    }
+
   .column {
     width: 100%;
     padding-top: 20px;
