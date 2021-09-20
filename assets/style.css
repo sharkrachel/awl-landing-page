@@ -134,10 +134,7 @@ hr:not([size]) {
 }
 
  /* FOOTER */
-    footer {
 
-        bottom: 0;
-    } 
 
   .copyright {
     color: #000;
@@ -331,14 +328,25 @@ hr:not([size]) {
 
  /* IMAGES */
 
+ .container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-row {
+    width: 75vw;
+}
 
  .learning-image{
     height: 120px;
+    margin: 0px;
  }
  
  .conference-image {
-    padding-top: 60px;
+    padding-top: 40px;
     height: 120px;
+    margin: 0px;
+    padding-left: 0px;
 
  
 }
