@@ -330,13 +330,15 @@ hr:not([size]) {
 
  .container {
     display: flex;
-    justify-content: center;
 }
 
 .image-row {
     width: 75vw;
 }
 
+.image-column {
+    align-items: center;
+}
  .learning-image{
     height: 120px;
     margin: 0px;
