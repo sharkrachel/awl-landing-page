@@ -38,6 +38,20 @@ body {
     background-color: transparent;
 }
 
+.header-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.header-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
 .header-text {
     font-size: 33px;
     line-height: 43px;
@@ -62,8 +76,9 @@ hr:not([size]) {
 
 .line {
     display: inline-block;
-    margin-bottom: 20px;
-    margin-left: 40px;
+    margin-bottom: 0px;
+    margin-left: -30px;
+    margin-top: 55px;
     background-image: linear-gradient(to right, #67A9DF, #B654D4);
     opacity: 1;
 }
@@ -229,6 +244,12 @@ hr:not([size]) {
         align-items: center;
         display: inline;
     }
+    .header-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
     .header-text {
         padding: 40px 5px 0px 50px;
     }
@@ -238,6 +259,7 @@ hr:not([size]) {
     .line {
         margin-bottom: 0px;
         margin-left: 50px;
+        margin-top: 0px;
     }
     .gradient-text {
         font-size: 20px;
@@ -295,6 +317,7 @@ hr:not([size]) {
     .line {
         margin-bottom: 0px;
         margin-left: 50px;
+        margin-top: 0px;
     }
     .gradient-text {
         font-size: 16px;
