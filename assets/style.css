@@ -288,6 +288,7 @@ footer {
     }
     .image-column {
         padding-left: 0px;
+        flex: 1 0 auto;
     }
 }
 
@@ -343,6 +344,7 @@ footer {
     }
     .image-column {
         align-items: center;
+        flex-basis: 100%;
     }
     .empty {
         width: 200px;
